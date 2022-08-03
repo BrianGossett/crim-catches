@@ -39,7 +39,6 @@ function Dashboard() {
     <div className="dashboard">
        <div className="dashboard__container">
         Logged in as
-         <div>{backend["0"]["id"]}</div>
          <div>{user?.email}</div>
          <button className="dashboard__btn" onClick={logout}>
           Logout
