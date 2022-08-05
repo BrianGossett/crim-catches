@@ -3,11 +3,10 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import "./Dashboard.css";
 import { auth,  logout } from "../../Util/firebase";
-import { query, collection, getDocs, where } from "firebase/firestore";
 
 
 function Dashboard() {
-  const [user, loading, error] = useAuthState(auth);
+  const [user, loading] = useAuthState(auth);
   const [backend, setBackend] = useState({});
   const navigate = useNavigate();
   const fetchFishData= async () => {
@@ -21,7 +20,7 @@ function Dashboard() {
         ).then(
         data => {
           setBackend(data)
-          console.log(data)
+          console.log(backend)
         }
       )
 
@@ -30,11 +29,13 @@ function Dashboard() {
       alert("An error occured while fetching user data");
     }
   };
+
   useEffect(() => {
     if (loading) return;
     if (!user) return navigate("/");
-    fetchFishData();
-  }, [user, loading]);
+  }, [user, loading, navigate]);
+
+
   return (
     <div className="dashboard">
        <div className="dashboard__container">

@@ -34,11 +34,12 @@ const auth = getAuth(app);
 const googleProvider = new GoogleAuthProvider();
 const signInWithGoogle = async () => {
   try {
-    const res = await signInWithPopup(auth, googleProvider);
+    await signInWithPopup(auth, googleProvider);
+    // const res = await signInWithPopup(auth, googleProvider);
     
     // To create a user in the database but should call from the backend.
 
-    //const user = res.user;
+    // const user = res.user;
     // const q = query(collection(db, "users"), where("uid", "==", user.uid));
     // const docs = await getDocs(q);
     // if (docs.docs.length === 0) {
@@ -66,7 +67,8 @@ const logInWithEmailAndPassword = async (email, password) => {
 
 const registerWithEmailAndPassword = async (name, email, password) => {
     try {
-      const res = await createUserWithEmailAndPassword(auth, email, password);
+      await createUserWithEmailAndPassword(auth, email, password);
+      // const res = await createUserWithEmailAndPassword(auth, email, password);
 
       // To create a user in the database but should call from the backend.
 
