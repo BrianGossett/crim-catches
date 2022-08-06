@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My Page is Displayed correctly 1`] = `
+<div
+  className="homepage"
+>
+  <h1>
+    Home
+  </h1>
+</div>
+`;
+
+exports[`My Page is created empty 1`] = `
+<div
+  className="homepage"
+>
+  <h1>
+    Home
+  </h1>
+</div>
+`;
