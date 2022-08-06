@@ -2,7 +2,8 @@
 // import Register from './componets/register'
 // import Reset from './componets/reset'
 // import Dashboard from './componets/dashboard'
-import Home from './Pages/home'
+import Home from './Pages/home';
+import "./App.css";
 
 import {
   BrowserRouter,

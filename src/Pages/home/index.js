@@ -1,11 +1,12 @@
 // import { useEffect, useState }  from "react";
+import "./Home.css";
 
 function Home() {
 
 
 
   return (
-    <div>
+    <div className="homepage">
       <h1>Home</h1>
     </div>
   );
