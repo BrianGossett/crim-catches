@@ -1,8 +1,9 @@
-class Stack {}
+import renderer from 'react-test-renderer';
+import Home from '../home';
 
-describe('My Stack', () => {
-    it('is created empty', () =>{
-        const stack = new Stack();
-        expect(stack.top).toBe(-1)
+describe('My Page', () => {
+    it('is Displayed correctly', () =>{
+        const tree = renderer.create(<Home />).toJSON();
+        expect(tree).toMatchSnapshot();
     });
 })
