@@ -1,7 +1,7 @@
-// import Login from './componets/login'
-// import Register from './componets/register'
-// import Reset from './componets/reset'
-// import Dashboard from './componets/dashboard'
+// import Login from './components/login'
+// import Register from './components/register'
+// import Reset from './components/reset'
+// import Dashboard from './components/dashboard'
 import Home from './Pages/home';
 import "./App.css";
 

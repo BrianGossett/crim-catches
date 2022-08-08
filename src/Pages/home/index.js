@@ -1,6 +1,6 @@
 // import { useEffect, useState }  from "react";
 import "./Home.css";
-import TopBar from "../../componets/topbar";
+import TopBar from "../../components/topbar";
 
 function Home() {
 
