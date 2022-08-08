@@ -1,0 +1,20 @@
+.topbar {
+    height: 55px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #01549F;
+    }
+.topbar__container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    }
+.topbar__login_text {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    }
